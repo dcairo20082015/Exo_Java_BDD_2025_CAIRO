@@ -51,10 +51,20 @@
 <% } %>
 </br>
 
+
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
-<p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>*****</br>****</br>***</br>**</br>*</p>
+<!-- <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p> -->
+<%int cpt2 = cpt; %>
+ <% for (int i = 1; i <= cpt; i++) { %>
+      <% for (int j = 1; j <= cpt2; j++) { %>
+       <%= "*" %>
+    <% } %>
+ <% cpt2=cpt2-1; %>
+</br>
+<% } %>
+</br>
+
+<!--<p>*****</br>****</br>***</br>**</br>*</p> -->
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
