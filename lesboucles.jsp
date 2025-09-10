@@ -98,10 +98,12 @@
       <% for (int j = 1; j <= cpt-cpt5; j++) { %>
        <%= "*" %>
     <% } %>
-</br>
- <% cpt5=cpt5-1; %>
+<% cpt5=cpt5-1; %>
 </br>
 <% } %>
+</br>
+
+
 </br>
 
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
