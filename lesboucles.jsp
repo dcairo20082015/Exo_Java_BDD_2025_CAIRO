@@ -114,7 +114,7 @@
 
 
 <!-- Triangle ========================= -->
-<%int cpt14 = (cpt-1)*2; %>
+<%int cpt14 = cpt; %>
 <%int cpt17 = 1; %>
  <% for (int i = 1; i <= cpt; i++) { %>
       <% for (int j = 1; j < cpt14; j++) { %>
@@ -123,7 +123,7 @@
       <% for (int j = 1; j <= cpt17; j++) { %>
        <%= "*" %>
     <% } %>
-<% cpt14=cpt14-2; %>
+<% cpt14=cpt14-1; %>
 <% cpt17=cpt17+1; %>
 </br>
 <% } %>
