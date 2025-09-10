@@ -128,9 +128,7 @@
 </br>
 <% } %>
 </br>
-<!-- ================================== -->
 
-<!-- Triangle inversé =================-->
 <%int cpt24 = 0; %>
 <%int cpt27 = cpt; %>
  <% for (int i = 1; i <= cpt; i++) { %>
@@ -145,7 +143,7 @@
 </br>
 <% } %>
 </br>
-<!-- =================================-->
+
 
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
