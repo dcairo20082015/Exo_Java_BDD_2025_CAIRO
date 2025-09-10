@@ -54,12 +54,12 @@
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <!-- <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p> -->
-<%int cpt2 = cpt; %>
+<%int cpt3 = cpt; %>
  <% for (int i = 1; i <= cpt; i++) { %>
-      <% for (int j = 1; j <= cpt2; j++) { %>
+      <% for (int j = 1; j <= cpt3; j++) { %>
        <%= "*" %>
     <% } %>
- <% cpt2=cpt2-1; %>
+ <% cpt3=cpt3-1; %>
 </br>
 <% } %>
 </br>
@@ -70,16 +70,16 @@
 <!-- <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>  -->
 <!-- <p>Exemple si l'utilisateur saisie le valeur 5</p> -->
 
-<%int cpt2 = cpt-1; %>
+<%int cpt4 = cpt-1; %>
  <% for (int i = 1; i <= cpt; i++) { %>
-      <% for (int j = 1; j <= cpt2; j++) { %>
+      <% for (int j = 1; j <= cpt4; j++) { %>
        &nbsp;
     <% } %>
-      <% for (int j = 1; j <= cpt-cpt2; j++) { %>
+      <% for (int j = 1; j <= cpt-cpt4; j++) { %>
        &nbsp;
     <% } %>
 </br>
- <% cpt2=cpt2-1; %>
+ <% cpt4=cpt4-1; %>
 </br>
 <% } %>
 </br>
