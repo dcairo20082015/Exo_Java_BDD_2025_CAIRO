@@ -71,14 +71,16 @@
 <!-- <p>Exemple si l'utilisateur saisie le valeur 5</p> -->
 
 <%int cpt4 = (cpt-1)*2; %>
+<%int cpt7 = 1; %>
  <% for (int i = 1; i <= cpt; i++) { %>
       <% for (int j = 1; j <= cpt4; j++) { %>
        &nbsp;
     <% } %>
-      <% for (int j = 1; j <= cpt-cpt4; j++) { %>
+      <% for (int j = 1; j <= cpt7; j++) { %>
        <%= "*" %>
     <% } %>
- <% cpt4=cpt4-2; %>
+<% cpt4=cpt4-2; %>
+<% cpt7=cpt7+1; %>
 </br>
 <% } %>
 </br>
