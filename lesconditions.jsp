@@ -29,8 +29,19 @@
             <p>Valeur 1 est égale à Valeur 2.</p>
         <% } %>
    
-    
+
+
+
+
 <h2>Exercice 1 : Comparaison 1</h2>
+
+<form action="#" method="post">
+    <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur1">
+    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur2">
+    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur3">
+    <p><input type="submit" value="Afficher">
+</form>
+
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 Exemple :</br>
