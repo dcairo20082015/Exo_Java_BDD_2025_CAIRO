@@ -92,7 +92,7 @@
 
 <%int cpt5 = cpt-1; %>
  <% for (int i = 1; i <= cpt; i++) { %>
-      <% for (int j = 1; j <= cpt5; j++) { %>
+      <% for (int j = 1; j < cpt5; j++) { %>
        &nbsp;
     <% } %>
       <% for (int j = 1; j <= cpt-cpt5; j++) { %>
@@ -117,7 +117,7 @@
 <%int cpt14 = cpt; %>
 <%int cpt17 = 1; %>
  <% for (int i = 1; i <= cpt; i++) { %>
-      <% for (int j = 1; j < cpt14; j++) { %>
+      <% for (int j = 1; j <= cpt14; j++) { %>
        &nbsp;
     <% } %>
       <% for (int j = 1; j <= cpt17; j++) { %>
