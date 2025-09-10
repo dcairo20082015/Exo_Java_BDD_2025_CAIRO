@@ -76,7 +76,7 @@
        &nbsp;
     <% } %>
       <% for (int j = 1; j <= cpt-cpt4; j++) { %>
-       &nbsp;
+       <%= "*" %>
     <% } %>
 </br>
  <% cpt4=cpt4-1; %>
