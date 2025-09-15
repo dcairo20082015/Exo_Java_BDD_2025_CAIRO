@@ -163,7 +163,7 @@
 &nbsp;
 <%= " = " %>
 <%= cpt*cptEx7 %>
-<% cptEx7=CptEx7+1%>
+<% cptEx7=CptEx7+1;%>
 </br>
 <% } %>
 
