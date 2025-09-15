@@ -155,9 +155,15 @@
 
 <% int cptEx7=1; %>
 <% for (int i = 1; i <= cpt; i++) { %>
-<%= "cptEx7" %>
-<% cptEx7=cptEx7+1; %>
+<%= cpt %>
 &nbsp;
+<%= " x " %>
+&nbsp;
+<%= cptEx7 %>
+&nbsp;
+<%= " = " %>
+<% cpt*cptEx7; %>
+</br>
 <% } %>
 
 
