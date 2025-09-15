@@ -156,7 +156,7 @@
 <% int cptEx7=1; %>
 <% for (int i = 1; i <= cpt; i++) { %>
 <%= "cptEx7" %>
-<% cptEx7+1; %>
+<% cptEx7=cptEx7+1; %>
 &nbsp;
 <% } %>
 
