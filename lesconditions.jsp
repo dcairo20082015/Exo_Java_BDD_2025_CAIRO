@@ -30,9 +30,6 @@
         <% } %>
    
 
-
-
-
 <h2>Exercice 1 : Comparaison 1</h2>
 
 <form action="#" method="post">
@@ -74,11 +71,6 @@ B = 20</br>
 C = 15</br>
 Oui C est compris entre A et B</p>
 
-
-
-
-
-
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
 
@@ -88,7 +80,6 @@ Oui C est compris entre A et B</p>
         <% } else { %>
             <p>Le nombre est paire</p>
         <% } %>
-
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
