@@ -42,13 +42,21 @@
     <p><input type="submit" value="Afficher">
 </form>
 
+
+
 <%-- Récupération des valeurs --%>
     <% String valeur11 = request.getParameter("valeur11"); %>
     <% String valeur12 = request.getParameter("valeur12"); %>
     <% String valeur13 = request.getParameter("valeur13"); %>
 
+
+<%-- Conversion des valeurs en entiers pour la comparaison --%>
+    <% int intValeur11 = Integer.parseInt(valeur11); %>
+    <% int intValeur12 = Integer.parseInt(valeur12); %>
+    <% int intValeur13 = Integer.parseInt(valeur13); %>
+
     <%-- Condition if pour comparer les valeurs --%>
-        <% if (valeur13 > valeur11 && valeur12 > valeur13 ) { %>
+        <% if (intValeur13 > intValeur11 && intValeur12 > intValeur13 ) { %>
             <p>La valeur </p>
 <%= valeur13 %>
  <p> est comprise entre </p>
