@@ -38,7 +38,7 @@
 <form action="#" method="post">
     <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur1">
     <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur2">
-    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur3">
+    <p>Saisir la valeur 3 : <input type="text" id="inputValeur" name="valeur3">
     <p><input type="submit" value="Afficher">
 </form>
 
@@ -52,6 +52,21 @@ Oui C est compris entre A et B</p>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
+
+<form action="#" method="post">
+    <p>Veuillez saisir une valeur : <input type="text" id="inputValeur" name="Valeur">
+    <p><input type="submit" value="Afficher">
+</form>
+
+<%-- Récupération des valeurs --%>
+    <% String valeur = request.getParameter("Valeur"); %>
+       
+<%-- Condition if pour comparer les valeurs --%>
+        <% if (Valeur % 2 >< 0) { %>
+            <p>Le nombre est impaire</p>
+        <% } else { %>
+            <p>Le nombre est paire</p>
+        <% } %>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
