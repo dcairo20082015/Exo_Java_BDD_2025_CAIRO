@@ -52,7 +52,7 @@
     <% int intValeur11 = Integer.parseInt(valeur11); %>
     <% int intValeur12 = Integer.parseInt(valeur12); %>
     <% int intValeur13 = Integer.parseInt(valeur13); %>
-<% } %>
+
 
     <%-- Condition if pour comparer les valeurs --%>
         <% if (intValeur13 > intValeur11 && intValeur12 > intValeur13 ) { %>
@@ -63,7 +63,7 @@
  <p> et </p>
 <%= valeur12 %>
         <% } %>
-
+<% } %>
 
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
