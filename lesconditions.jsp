@@ -60,7 +60,9 @@ Oui C est compris entre A et B</p>
 
 <%-- Récupération des valeurs --%>
     <% String valeur = request.getParameter("Valeur"); %>
-         <% let Rest= Valeur % 2; %>
+  <%-- Conversion des valeurs en entiers pour la comparaison --%>
+        <% int intValeur = Integer.parseInt(valeur); %>
+         <% let Rest= intValeur % 2; %>
 <%-- Condition if pour comparer les valeurs --%>
         <% if (Rest != 0) { %>
             <p>Le nombre est impaire</p>
