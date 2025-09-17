@@ -47,7 +47,7 @@
     <% String valeur13 = request.getParameter("valeur13"); %>
 
 
-<% if (valeur11 != null && valeur12 != null && valeur13) { %>
+<% if (valeur11 != null && valeur12 != null && valeur13 != null) { %>
 <%-- Conversion des valeurs en entiers pour la comparaison --%>
     <% int intValeur11 = Integer.parseInt(valeur11); %>
     <% int intValeur12 = Integer.parseInt(valeur12); %>
