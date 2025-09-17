@@ -48,13 +48,13 @@
     <% String valeur13 = request.getParameter("valeur13"); %>
 
     <%-- Condition if pour comparer les valeurs --%>
-        <% if (intValeur13 > intValeur11 && intValeur12 > intValeur13 ) { %>
+        <% if (valeur13 > valeur11 && valeur12 > valeur13 ) { %>
             <p>La valeur </p>
-<%= intValeur13 %>
+<%= valeur13 %>
  <p> est comprise entre </p>
-<%= intValeur11 %>
+<%= valeur11 %>
  <p> et </p>
-<%= intValeur12 %>
+<%= valeur12 %>
         <% } %>
 
 
