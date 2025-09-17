@@ -60,9 +60,9 @@ Oui C est compris entre A et B</p>
 
 <%-- Récupération des valeurs --%>
     <% String valeur = request.getParameter("Valeur"); %>
-       
+         <% let Rest= Valeur % 2; %>
 <%-- Condition if pour comparer les valeurs --%>
-        <% if (Valeur % 2 >< 0) { %>
+        <% if (Rest != 0) { %>
             <p>Le nombre est impaire</p>
         <% } else { %>
             <p>Le nombre est paire</p>
