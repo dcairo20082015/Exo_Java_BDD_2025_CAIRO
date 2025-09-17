@@ -44,7 +44,7 @@
  <p> et </p>
 <%= valeur2 %>
         <% } %>
-<% } %>
+
 
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
@@ -63,6 +63,8 @@ Oui C est compris entre A et B</p>
         <% } else { %>
             <p>Le nombre est paire</p>
         <% } %>
+<% } %>
+
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
