@@ -73,7 +73,7 @@
 <%int cpt4 = (cpt-1)*2; %>
 <%int cpt7 = 1; %>
  <% for (int i = 1; i <= cpt; i++) { %>
-      <% for (int j = 1; j < cpt4; j++) { %>
+      <% for (int j = 1; j < cpt4-1; j++) { %>
        &nbsp;
     <% } %>
       <% for (int j = 1; j <= cpt7; j++) { %>
