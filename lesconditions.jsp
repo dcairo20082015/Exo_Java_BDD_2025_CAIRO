@@ -8,18 +8,21 @@
 <form action="#" method="post">
     <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur1">
     <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur2">
+    <p>Saisir la valeur 3 : <input type="text" id="inputValeur" name="valeur3">
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
     <% String valeur1 = request.getParameter("valeur1"); %>
     <% String valeur2 = request.getParameter("valeur2"); %>
-
+    <% String valeur3 = request.getParameter("valeur3"); %>
     <%-- Vérification de la condition entre les deux valeurs --%>
     <% if (valeur1 != null && valeur2 != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
         <% int intValeur1 = Integer.parseInt(valeur1); %>
         <% int intValeur2 = Integer.parseInt(valeur2); %>
-        
+        <% int intValeur3 = Integer.parseInt(valeur3); %>
+
+
         <%-- Condition if pour comparer les valeurs --%>
         <% if (intValeur1 > intValeur2) { %>
             <p>Valeur 1 est supérieure à Valeur 2.</p>
@@ -32,36 +35,14 @@
 
 <h2>Exercice 1 : Comparaison 1</h2>
 
-<form action="#" method="post">
-    <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur11">
-    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur12">
-    <p>Saisir la valeur 3 : <input type="text" id="inputValeur" name="valeur13">
-    <p><input type="submit" value="Afficher">
-</form>
-
-
-
-<%-- Récupération des valeurs --%>
-    <% String valeur11 = request.getParameter("valeur11"); %>
-    <% String valeur12 = request.getParameter("valeur12"); %>
-    <% String valeur13 = request.getParameter("valeur13"); %>
-
-
-<% if (valeur11 != null && valeur12 != null && valeur13 != null) { %>
-<%-- Conversion des valeurs en entiers pour la comparaison --%>
-    <% int intValeur11 = Integer.parseInt(valeur11); %>
-    <% int intValeur12 = Integer.parseInt(valeur12); %>
-    <% int intValeur13 = Integer.parseInt(valeur13); %>
-
-
     <%-- Condition if pour comparer les valeurs --%>
-        <% if (intValeur13 > intValeur11 && intValeur12 > intValeur13 ) { %>
+        <% if (intValeur3 > intValeur1 && intValeur2 > intValeur3 ) { %>
             <p>La valeur </p>
-<%= valeur13 %>
+<%= valeur3 %>
  <p> est comprise entre </p>
-<%= valeur11 %>
+<%= valeur1 %>
  <p> et </p>
-<%= valeur12 %>
+<%= valeur2 %>
         <% } %>
 <% } %>
 
