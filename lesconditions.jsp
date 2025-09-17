@@ -36,11 +36,27 @@
 <h2>Exercice 1 : Comparaison 1</h2>
 
 <form action="#" method="post">
-    <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur1">
-    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur2">
-    <p>Saisir la valeur 3 : <input type="text" id="inputValeur" name="valeur3">
+    <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur11">
+    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur12">
+    <p>Saisir la valeur 3 : <input type="text" id="inputValeur" name="valeur13">
     <p><input type="submit" value="Afficher">
 </form>
+
+<%-- Récupération des valeurs --%>
+    <% String valeur11 = request.getParameter("valeur11"); %>
+    <% String valeur12 = request.getParameter("valeur12"); %>
+    <% String valeur13 = request.getParameter("valeur13"); %>
+
+    <%-- Condition if pour comparer les valeurs --%>
+        <% if (intValeur13 > intValeur11 && intValeur12 > intValeur13 ) { %>
+            <p>La valeur </p>
+<%= intValeur13 %>
+ <p> est comprise entre </p>
+<%= intValeur11 %>
+ <p> et </p>
+<%= intValeur12 %>
+        <% } %>
+
 
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
@@ -49,6 +65,11 @@ A = 10</br>
 B = 20</br>
 C = 15</br>
 Oui C est compris entre A et B</p>
+
+
+
+
+
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
