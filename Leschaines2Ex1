@@ -1,0 +1,25 @@
+//Consignes: 
+En utilisant uniquement les outils présentés ci-dessus (+ des boucles for et des conditions vu précédemment), comptez combien de 'e' il y a dans notre chaine de charactère ?
+
+public class Main {
+  public static void main(String[] args) {
+    String chaine1 = "l’hiver sera pluvieux";
+    //On a la longueur de la chaine dans cette variable
+    int Longueur =chaine1.length(), compteur =0;
+
+
+for ( int i=0;i<Longueur; i++)
+{
+    if (chaine1.charAt(i) == 'e' )
+    {
+        compteur++;
+    }
+
+}
+   
+  //Affichage du résultat
+  System.out.println("Il y a " + compteur +" e dans la chaine de caractère");
+
+ 
+}
+}
