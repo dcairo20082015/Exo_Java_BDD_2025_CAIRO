@@ -62,7 +62,7 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 <% int min=0; %>
 <% for (int k=0; k< tableauDeChiffres.length;k++) { %>
 <% if (Integer.parseInt(tableauDeChiffres[k])<min) { %>
-<% min =  Integer.parseInt(tableauDeChiffres[k];} %>
+<% min =  Integer.parseInt(tableauDeChiffres[k]);} %>
 <% } %>
 <p> La valeur minimum est : <%= min %> </p>
 
