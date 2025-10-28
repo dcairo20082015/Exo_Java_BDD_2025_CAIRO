@@ -32,11 +32,6 @@
     }
 %>
 
-<%
-    if (valeur != null && !valeur.isEmpty()) {
-        MyClass tache = new MyClass(Title,Description);
-    }
-%>
 
 </body>
 </html>
