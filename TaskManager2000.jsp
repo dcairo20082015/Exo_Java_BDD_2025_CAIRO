@@ -33,13 +33,8 @@
 %>
 
 <%
-    String valeur = request.getParameter("valeur");
-
     if (valeur != null && !valeur.isEmpty()) {
         MyClass tache = new MyClass(Title,Description);
-%>
-        <p>Nom de la tâche : <%= tache.nameTache %></p>
-<%
     }
 %>
 
