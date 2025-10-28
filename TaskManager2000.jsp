@@ -21,7 +21,7 @@
     <% String Title = request.getParameter("valeur"); %>
 
 
-<%! 
+<% 
     class MyClass {
         String nameTache,description;
 
