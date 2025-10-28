@@ -38,8 +38,8 @@
 <% int cpt=0,i=0; %>
 <% for(i = 0; i< chaine.length(); i++) %>
 <% { %>
-<% if (chaine.charAt(i)=='e') %>
-<%   {cpt++; } %>
+<% if (chaine.charAt(i)=='e') {%>
+<% cpt++; } %>
 <% } %>
 <p>Il y a <%= cpt %> e dans la chaine de caractère</p>
 
