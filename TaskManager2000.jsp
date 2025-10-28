@@ -14,6 +14,13 @@
     <input type="submit" value="Enregistrer">
 </form>
 
+
+
+<%-- Récupération des valeurs --%>
+    <% String Description = request.getParameter("taskDescription"); %>
+    <% String Title = request.getParameter("valeur"); %>
+
+
 <%! 
     class MyClass {
         String nameTache,description;
@@ -29,7 +36,7 @@
     String valeur = request.getParameter("valeur");
 
     if (valeur != null && !valeur.isEmpty()) {
-        MyClass tache = new MyClass(valeur,taskDescription);
+        MyClass tache = new MyClass(Title,Description);
 %>
         <p>Nom de la tâche : <%= tache.nameTache %></p>
 <%
