@@ -31,6 +31,12 @@
     }
 %>
 
+<%
+ if (Title != null && !Title.isEmpty()) {
+        MyClass tache = new MyClass(Title,Description);
+    }
+%>
+
 
 </body>
 </html>
