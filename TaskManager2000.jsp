@@ -9,6 +9,8 @@
 <form action="#" method="post">
     <label for="inputValeur">Saisir le nom d'une tache : </label>
     <input type="text" id="inputValeur" name="valeur">
+    <label for="inputDescr">Saisir le nom d'une tache : </label>
+    <p>Saisir la description de la tâche: <input type="text" id="inputDescr" name="taskDescription"> </p>
     <input type="submit" value="Enregistrer">
 </form>
 
@@ -27,7 +29,7 @@
     String valeur = request.getParameter("valeur");
 
     if (valeur != null && !valeur.isEmpty()) {
-        MyClass tache = new MyClass(valeur);
+        MyClass tache = new MyClass(valeur,taskDescription);
 %>
         <p>Nom de la tâche : <%= tache.nameTache %></p>
 <%
