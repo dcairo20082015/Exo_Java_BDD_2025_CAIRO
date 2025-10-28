@@ -48,7 +48,7 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 
 <% int Max=0; %>
 <% for (int j=0; j< tableauDeChiffres.length;j++) { %>
-<% if (Integer.parseInt(tableauDeChiffres[j]>Max) { %>
+<% if (Integer.parseInt(tableauDeChiffres[j])>Max) { %>
 <% Max =  Integer.parseInt(tableauDeChiffres[j];} %>
 <% } %>
 <p> La valeur maximum est : <%= Max %> </p>
