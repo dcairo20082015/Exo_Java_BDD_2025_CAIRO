@@ -41,11 +41,19 @@
 <% if (chaine.charAt(i)=='e') %>
 <%   {cpt++; } %>
 <% } %>
-<% System.out.print("Il y a " + cpt + " e dans la chaine."); %>
+<p>Il y a <%= cpt %> e dans la chaine de caractère</p>
 
 
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
+
+
+
+
+
+
+
+
 Exemple : Bonjour</br>
 B</br>
 o</br>
