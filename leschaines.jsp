@@ -36,7 +36,7 @@
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
 <% int cpt=0,i=0; %>
-<% for(i = 0; i< chaine.length(); i++) %>
+<% for(i = 0; i< longueurChaine; i++) %>
 <% { %>
 <% if (chaine.charAt(i)=='e') {%>
 <% cpt++; } %>
