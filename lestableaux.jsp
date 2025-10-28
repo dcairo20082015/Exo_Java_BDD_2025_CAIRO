@@ -70,6 +70,22 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 <h2>Exercice 6 : La valeur le plus proche de 0</h2>
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
 
+<% int delta=0; %>
+<% for (int k=0; k< tableauDeChiffres.length;k++) { %>
+<% if (Integer.parseInt(tableauDeChiffres[k]-0 < 0 ) { %>
+<% if ((Integer.parseInt(tableauDeChiffres[k]-0)*-1<delta) { %>
+<% delta = Integer.parseInt(tableauDeChiffres[k] }%>
+<% } %>
+<% else if (Integer.parseInt(tableauDeChiffres[k]-0 => 0){ %>
+<% if ((Integer.parseInt(tableauDeChiffres[k]-0)<delta) { %>
+<% delta = Integer.parseInt(tableauDeChiffres[k] }%>
+<% }%>
+<% }%>
+<% }%>
+
+<p> La valeur minimum est : <%= min %> </p>
+
+
 <h2>Exercice 7 : La valeur le plus proche de 0 (2° version)</h2>
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
 <p>En cas d'égalité entre un chiffre positif et négatif, affichez le chiffre positif</p>
