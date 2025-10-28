@@ -37,7 +37,7 @@
 Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'utilisateur</p>
 <% int cptr=0; %>
 <% for (int i=0; i< tableauDeChiffres.length;i++) { %>
-<% cptr= cptr+ Integer.parseInt(tableauDeChiffres[i]) %>
+<% cptr= cptr+ Integer.parseInt(tableauDeChiffres[i]); %>
 <% } %>
 
 <p> La somme de toute les valeurs est : <%= cptr %> </p>
