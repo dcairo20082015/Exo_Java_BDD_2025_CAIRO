@@ -37,8 +37,9 @@
 
 <% int cpt=0; %>
 <% for(int i = 0; i< chaine.length(); i++) %>
-<% { if (chaine.charAt(i)=='e') %>
-<%   { cpt++; } %>
+<% { %>
+<% if (chaine.charAt(i)=='e') %>
+<%   {cpt++; } %>
 <% } %>
 <% System.out.print("Il y a " + cpt + " e dans la chaine."); %>
 
