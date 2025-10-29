@@ -20,6 +20,7 @@
     <% String Title = request.getParameter("valeur"); %>
 
 <% 
+public class main {
 public static class MyClass {
         public String nameTache,description;
 
@@ -37,12 +38,19 @@ public static class MyClass {
 
 
     }
+
+
+}
 %>
 
 <%
+
+public static void main (String[] args){
  if (Title != null && !Title.isEmpty()) {
         MyClass tache = new MyClass(Title,Description);
     }
+}
+
 %>
 
 </body>
