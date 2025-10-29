@@ -23,7 +23,7 @@
     class MyClass {
         String nameTache,description;
 
-        private static List<MyClass> instances new ArrayList<>();
+        private static List<MyClass> instances = new ArrayList<>();
         
         public MyClass(String name,String _description) {
             this.nameTache = name;
