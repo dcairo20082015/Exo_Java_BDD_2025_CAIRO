@@ -18,6 +18,8 @@
  import java.util.List;
 %>
 
+
+
 <%-- Récupération des valeurs --%>
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
@@ -26,9 +28,16 @@
     class MyClass {
         String nameTache,description;
 
+        private static List<MyClass> instances new ArrayList<>();
+        
         public MyClass(String name,String _description) {
-            nameTache = name;
-            description = _description;    
+            this.nameTache = name;
+            this.description = _description; 
+            instances.add(this);
+        }
+
+        public static List<MyClass> getInstances(){
+        return instances;
         }
     }
 %>
@@ -38,7 +47,6 @@
         MyClass tache = new MyClass(Title,Description);
     }
 %>
-
 
 </body>
 </html>
