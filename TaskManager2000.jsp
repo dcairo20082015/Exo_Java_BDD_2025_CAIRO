@@ -20,7 +20,7 @@
     <% String Title = request.getParameter("valeur"); %>
 
 <% 
-    class MyClass {
+public class MyClass {
         String nameTache,description;
 
         private static List<MyClass> instances = new ArrayList<>();
@@ -34,6 +34,8 @@
         public static List<MyClass> getInstances(){
         return instances;
         }
+
+
     }
 %>
 
