@@ -13,16 +13,14 @@
     <input type="submit" value="Enregistrer">
 </form>
 
-
-
-<%-- Récupération des valeurs --%>
-    <% String Description = request.getParameter("taskDescription"); %>
-    <% String Title = request.getParameter("valeur"); %>
-
 <% 
  import java.util.ArrayList;
  import java.util.List;
 %>
+
+<%-- Récupération des valeurs --%>
+    <% String Description = request.getParameter("taskDescription"); %>
+    <% String Title = request.getParameter("valeur"); %>
 
 <% 
     class MyClass {
