@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList,java.util.List" %>
 
 <html>
 <head>
@@ -12,12 +13,6 @@
     <p>Saisir la description de la tâche: <input type="text" id="inputDescr" name="taskDescription"> </p>
     <input type="submit" value="Enregistrer">
 </form>
-
-<% 
- import java.util.ArrayList;
- import java.util.List;
-%>
-
 
 
 <%-- Récupération des valeurs --%>
