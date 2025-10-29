@@ -21,7 +21,7 @@
 
 <% 
 public static class MyClass {
-        String nameTache,description;
+        public String nameTache,description;
 
         private static List<MyClass> instances = new ArrayList<>();
         
