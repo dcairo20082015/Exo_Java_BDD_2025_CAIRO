@@ -19,6 +19,10 @@
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
 
+<% 
+ import java.util.ArrayList;
+ import java.util.List;
+%>
 
 <% 
     class MyClass {
