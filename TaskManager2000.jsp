@@ -43,8 +43,8 @@ if (taches == null) {
 String nom = request.getParameter("nameTache");
 String description = request.getParameter("description");
 
-if (nameTache != null && description != null) {
-    taches.add(new Tache(nameTache, description));
+if (nom != null && description != null) {
+    taches.add(new Tache(nom, description));
 }
 
 session.setAttribute("taches", taches);
