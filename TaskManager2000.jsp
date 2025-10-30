@@ -33,8 +33,6 @@
             tableau [i][1]=description;
             i++;
             j++;
-        this.afficherTaches(out);
-
         }
 
 public void afficherTaches (JspWriter out) throws java.io.IOException {
