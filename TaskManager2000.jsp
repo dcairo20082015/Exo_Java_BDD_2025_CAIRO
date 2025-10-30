@@ -17,11 +17,11 @@
 <%-- Récupération des valeurs --%>
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
-
+    <% int[][] tableau = new int[500][2];%>
 
 
 <% 
-<% taskList[] tableauDeChiffres = chaine.split("\\s+"); %>
+
 public static class MyClass {
         public String nameTache,description;
 
