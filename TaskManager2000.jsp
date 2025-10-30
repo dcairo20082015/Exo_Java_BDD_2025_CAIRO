@@ -34,23 +34,22 @@
             i++;
             j++;
 
-
-            for (int k = 0; k < tableau.length; k++) {
-%>
-            <%= tableau [i][0] %>
-<%
-            }
-
-
         }
 
-
+public void afficherTaches (JspWriter out) throws java.io.IOException {
+    for (int k=0;k<i;k++)
+    {
+    out.println("tâche : " + tableau [k][0] +"<br>");
     }
+  }
+
+ }
 %>
 
 <%
  if (Title != null && !Title.isEmpty()) {
         MyClass tache = new MyClass(Title,Description);
+tache.afficherTaches(out);
     }
 %>
 
