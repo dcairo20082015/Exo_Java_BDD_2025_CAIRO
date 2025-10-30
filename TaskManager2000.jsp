@@ -47,8 +47,7 @@
 
 
  <% for (int k = 0; k < tableau.length; k++) { %>
-    
-       <%= tableau [i][0] %>
+       <p> <%= tableau [i][0] %> </p>
     <% } %>
 </br>
 <% } %>
