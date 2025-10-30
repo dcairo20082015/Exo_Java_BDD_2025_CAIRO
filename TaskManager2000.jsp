@@ -24,7 +24,7 @@
     class MyClass {
         String nameTache,description;
         int[][] tableau = new String[500][2];
-        int i = 0, int j =0;
+        int i = 0,j =0;
 
         public MyClass(String name,String _description) {
             nameTache = name;
