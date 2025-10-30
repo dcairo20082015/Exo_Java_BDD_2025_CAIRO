@@ -23,7 +23,7 @@
 
 <% 
     class Tache {
-        String nameTache,description;
+        public String nameTache,description;
 
         public Tache(String name,String _description) {
             nameTache = name;
