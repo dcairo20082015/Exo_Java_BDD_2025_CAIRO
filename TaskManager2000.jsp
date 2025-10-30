@@ -39,11 +39,11 @@ if (taches == null) {
     taches = new ArrayList<>();
 }
 
-String nom = request.getParameter("nom");
+String nom = request.getParameter("nameTache");
 String description = request.getParameter("description");
 
-if (nom != null && description != null) {
-    taches.add(new Tache(nom, description));
+if (nameTache != null && description != null) {
+    taches.add(new Tache(nameTache, description));
 }
 
 session.setAttribute("taches", taches);
@@ -54,7 +54,7 @@ session.setAttribute("taches", taches);
 <%
 for (Tache t : taches) {
 %>
-    <li><b><%= t.nom %></b> — <%= t.description %></li>
+    <li><b><%= t.nameTache %></b> — <%= t.description %></li>
 <%
 }
 %>
