@@ -18,16 +18,24 @@
 <%-- Récupération des valeurs --%>
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
-    <% int[][] tableau = new int[500][2]; %>
+
 
 <% 
     class MyClass {
         String nameTache,description;
+        int[][] tableau = new int[500][2];
+        int i = 0, int j =0;
 
         public MyClass(String name,String _description) {
             nameTache = name;
-            description = _description;    
+            description = _description; 
+            tableau [i][0]=name;
+            tableau [i][1]=description;
+            i++;
+            j++;
         }
+
+
     }
 %>
 
