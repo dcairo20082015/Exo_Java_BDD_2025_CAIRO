@@ -18,7 +18,7 @@
 <%-- Récupération des valeurs --%>
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
-
+    <% int[][] tableau = new int[500][2]; %>
 
 <% 
     class MyClass {
