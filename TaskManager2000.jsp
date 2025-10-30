@@ -52,6 +52,9 @@ if (nom != null && description != null) {
 
 <h3>Liste des tâches :</h3>
 
+
+<%= "Tâches enregistrées : " + taches.size() %><br>
+
 <%
 if ("Enregistrer".equals(1)){
 
