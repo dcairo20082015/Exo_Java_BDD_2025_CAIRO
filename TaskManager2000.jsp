@@ -21,37 +21,44 @@
 
 
 <% 
-    class MyClass {
+    class Tache {
         String nameTache,description;
-        String[][] tableau = new String[500][2];
-        int i = 0,j =0;
 
-        public MyClass(String name,String _description) {
+        public Tache(String name,String _description) {
             nameTache = name;
             description = _description; 
-            tableau [i][0]=name;
-            tableau [i][1]=description;
-            i++;
-            j++;
         }
-
-public void afficherTaches (JspWriter out) throws java.io.IOException {
-    for (int k=0;k<i;k++)
-    {
-    out.println("tâche : " + tableau [k][0] +"<br>");
-    }
-  }
 
  }
 %>
 
 <%
- if (Title != null && !Title.isEmpty()) {
-        MyClass tache = new MyClass(Title,Description);
-tache.afficherTaches(out);
-    }
+List<Tache> taches = (List<Tache>) session.getAttribute("taches");
+
+if (taches == null) {
+    taches = new ArrayList<>();
+}
+
+String nom = request.getParameter("nom");
+String description = request.getParameter("description");
+
+if (nom != null && description != null) {
+    taches.add(new Tache(nom, description));
+}
+
+session.setAttribute("taches", taches);
 %>
 
+<h3>Liste des tâches :</h3>
+<ul>
+<%
+for (Tache t : taches) {
+%>
+    <li><b><%= t.nom %></b> — <%= t.description %></li>
+<%
+}
+%>
+</ul>
 
 
 
