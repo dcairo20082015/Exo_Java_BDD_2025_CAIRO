@@ -33,6 +33,13 @@
             tableau [i][1]=description;
             i++;
             j++;
+
+
+            for (int k = 0; k < tableau.length; k++) {
+            <p> <%= tableau [i][0] %> </p>
+            }
+
+
         }
 
 
@@ -45,10 +52,6 @@
     }
 %>
 
-
- <% for (int k = 0; k < tableau.length; k++) { %>
-       <p> <%= tableau [i][0] %> </p>
-    <% } %>
 </br>
 <% } %>
 </br>
