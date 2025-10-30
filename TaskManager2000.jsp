@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.util.ArrayList,java.util.List" %>
 
 <html>
 <head>
@@ -19,31 +18,22 @@
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
 
+
+
 <% 
-public class main {
+<% taskList[] tableauDeChiffres = chaine.split("\\s+"); %>
 public static class MyClass {
         public String nameTache,description;
 
-        private static List<MyClass> instances = new ArrayList<>();
-        
         public MyClass(String name,String _description) {
-            this.nameTache = name;
-            this.description = _description; 
-            instances.add(this);
+        nameTache = name;
+        description = _description; 
         }
 
-        public List<MyClass> getInstances(){
-        return instances;
-        }
 
 
     }
-
-
-}
 %>
-
-<%
 
 public static void main (String[] args){
  if (Title != null && !Title.isEmpty()) {
