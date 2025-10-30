@@ -14,34 +14,29 @@
 </form>
 
 
+
 <%-- Récupération des valeurs --%>
     <% String Description = request.getParameter("taskDescription"); %>
     <% String Title = request.getParameter("valeur"); %>
-    <% int[][] tableau = new int[500][2];%>
 
 
 <% 
-
-public class MyClass {
-        public String nameTache,description;
+    class MyClass {
+        String nameTache,description;
 
         public MyClass(String name,String _description) {
-        nameTache = name;
-        description = _description; 
+            nameTache = name;
+            description = _description;    
         }
-
-
-
     }
 %>
 
-public static void main (String[] args){
+<%
  if (Title != null && !Title.isEmpty()) {
         MyClass tache = new MyClass(Title,Description);
     }
-}
-
 %>
+
 
 </body>
 </html>
