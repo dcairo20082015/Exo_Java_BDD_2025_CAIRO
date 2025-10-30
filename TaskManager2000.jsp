@@ -45,14 +45,15 @@ String description = request.getParameter("description");
 
 if (nom != null && description != null) {
     taches.add(new Tache(nom, description));
+    session.setAttribute("taches", taches);
 }
 
-session.setAttribute("taches", taches);
 %>
 
 <h3>Liste des tâches :</h3>
 
 <%
+
 for (Tache t : taches) {
 %>
     <%= t.nameTache + " " + t.description %>
