@@ -23,7 +23,7 @@
 <% 
     class MyClass {
         String nameTache,description;
-        int[][] tableau = new String[500][2];
+        String[][] tableau = new String[500][2];
         int i = 0,j =0;
 
         public MyClass(String name,String _description) {
