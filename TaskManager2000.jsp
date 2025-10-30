@@ -55,7 +55,7 @@ session.setAttribute("taches", taches);
 <%
 for (Tache t : taches) {
 %>
-    <%= t.nameTache %></b> — <%= t.description %>
+    <%= t.nameTache %> — <%= t.description </br> %>
 <%
 }
 %>
