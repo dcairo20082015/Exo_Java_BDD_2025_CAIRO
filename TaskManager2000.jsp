@@ -22,7 +22,7 @@
 
 <% 
 
-public static class MyClass {
+public class MyClass {
         public String nameTache,description;
 
         public MyClass(String name,String _description) {
