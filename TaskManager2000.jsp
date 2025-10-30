@@ -33,6 +33,7 @@
             tableau [i][1]=description;
             i++;
             j++;
+        this.afficherTaches(out);
 
         }
 
