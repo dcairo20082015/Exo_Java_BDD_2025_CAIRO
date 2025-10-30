@@ -53,11 +53,13 @@ if (nom != null && description != null) {
 <h3>Liste des tâches :</h3>
 
 <%
+if ("Enregistrer".equals(1)){
 
-for (Tache t : taches) {
+ for (Tache t : taches) {
 %>
     <%= t.nameTache + " " + t.description %>
 <%
+ }
 }
 %>
 
