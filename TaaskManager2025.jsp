@@ -112,7 +112,7 @@
 
 <h1>Mini Gestionnaire de Tâches</h1>
 
-<form action="taches.jsp" method="post">
+<form action="TaaskManager2025.jsp" method="post">
     <label>Titre :</label>
     <input type="text" name="titre" required>
 
