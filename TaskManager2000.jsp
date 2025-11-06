@@ -1,5 +1,5 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*, java.time.LocalDate" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
     
 <%
 class Task {
