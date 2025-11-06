@@ -109,6 +109,45 @@ width: 90%;
         }
         th { background-color: #007BFF; color: white; }
         .done { color: green; font-weight: bold; }
+/* --- Boutons dans la colonne Actions --- */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* espace vertical entre les boutons */
+}
+
+.actions form {
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.btn.terminer {
+    background-color: #28a745;
+}
+
+.btn.supprimer {
+    background-color: #dc3545;
+}
+
+.btn.terminer:hover {
+    background-color: #218838;
+}
+
+.btn.supprimer:hover {
+    background-color: #c82333;
+}
+
     </style>
 </head>
 <body>
@@ -151,16 +190,16 @@ width: 90%;
             <td class="<%= t.isCompleted() ? "done" : "" %>">
                 <%= t.isCompleted() ? "Done" : "On-going" %>
             </td>
-            <td>
-                <form method="post" style="margin-bottom:10px;">
-                 <input type="hidden" name="terminer" value="<%= i %>">
-                    <input type="submit" value="Terminer">
-                </form>
-                <form method="post" style="display:inline;">
-                    <input type="hidden" name="supprimer" value="<%= i %>">
-                    <input type="submit" value="Supprimer">
-                </form>
-            </td>
+           <td class="actions">
+    <form method="post">
+        <input type="hidden" name="terminer" value="<%= i %>">
+        <input type="submit" value="Terminer" class="btn terminer">
+    </form>
+    <form method="post">
+        <input type="hidden" name="supprimer" value="<%= i %>">
+        <input type="submit" value="Supprimer" class="btn supprimer">
+    </form>
+        </td>
         </tr>
         <% } %>
     </table>
