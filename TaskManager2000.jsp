@@ -155,8 +155,6 @@ width: 90%;
                 <form method="post" style="display:inline;">
                     <input type="hidden" name="terminer" value="<%= i %>">
                     <input type="submit" value="Terminer">
-                </form>
-                <form method="post" style="display:inline;">
                     <input type="hidden" name="supprimer" value="<%= i %>">
                     <input type="submit" value="Supprimer">
                 </form>
