@@ -152,9 +152,9 @@ width: 90%;
 </head>
 <body>
 
-<h1>Mini Gestionnaire de Tâches</h1>
+<h1>Task Manager 2000</h1>
 
-<form action="TaaskManager2025.jsp" method="post">
+<form action="TaaskManager2000.jsp" method="post">
     <label>Titre :</label>
     <input type="text" name="titre" required>
 
@@ -206,7 +206,7 @@ width: 90%;
 <%
    } else {
 %>
-    <p>Aucune tâche enregistrée.</p>
+    <p>Aucune tâche </p>
 <%
     }
 %>
