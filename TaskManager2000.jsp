@@ -1,10 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.*, java.time.LocalDate" %>
     
 <%
 class Task {
-    private String nom;
+    private String title;
     private String description;
     private localDate dueDate; // --- Variable de type date
     private boolean completed;
