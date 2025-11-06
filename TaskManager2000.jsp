@@ -154,7 +154,7 @@ width: 90%;
 
 <h1>Task Manager 2000</h1>
 
-<form action="TaaskManager2000.jsp" method="post">
+<form action="TaskManager2000.jsp" method="post">
     <label>Titre :</label>
     <input type="text" name="titre" required>
 
