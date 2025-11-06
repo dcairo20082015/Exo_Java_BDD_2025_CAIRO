@@ -13,22 +13,34 @@
     <% String Title = request.getParameter("valeur"); %>
 
 <%
-class Tache {
-    String nom;
-    String description;
+class Task {
+    private String nom;
+    private String description;
+    private localDate dueDate; // --- Variable de type date
+    private boolean completed;
 
-    public Tache(String nom, String description) {
-        this.nom = nom;
-        this.description = description;
+
+    public Task(String title, String description, LocalDate dueDate) {
+            this.title = title;
+            this.description = description;
+            this.dueDate = dueDate;
+            this.completed = false;
     }
+
+        public String getTitle() { return title; }
+        public String getDescription() { return description; }
+        public LocalDate getDueDate() { return dueDate; }
+        public boolean isCompleted() { return completed; }
+        public void setCompleted(boolean completed) { this.completed = completed; }
 }
 %>
 
 <%
-List<Tache> taches = (List<Tache>) session.getAttribute("taches");
+List<Task> lisTaches = (List<Task>) session.getAttribute("lisTaches");
 
-if (taches == null) {
-    taches = new ArrayList<>();
+if (listeTaches == null) {
+    listeTaches = new ArrayList<>();
+    session.setAttribute("listeTaches", listeTaches);
 }
 
 String nom = request.getParameter("nom");
