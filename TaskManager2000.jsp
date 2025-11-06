@@ -5,7 +5,7 @@
 class Task {
     private String title;
     private String description;
-    private localDate dueDate; // --- Variable de type date
+    private LocalDate dueDate; // --- Variable de type date
     private boolean completed;
 
 
